@@ -570,6 +570,26 @@ a:focus {
     .client-logo a:nth-child(4) img {
         max-width: 70px;
     }
+
+    .youtube-bg #bgndVideo {
+        display: none;
+    }
+
+    .youtube-bg .mobile-video {
+        display: block;
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+    }
+
+    .youtube-bg .mobile-video iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.youtube-bg .mobile-video {
+    display: none;
 }
 
 .client .section-header h2:before {
