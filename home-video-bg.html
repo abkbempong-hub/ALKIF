@@ -1,6 +1,3 @@
-<?php
-$youtubeUrl = 'https://youtu.be/lj1_OlDFOVM';
-?>
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
@@ -81,7 +78,7 @@ $youtubeUrl = 'https://youtu.be/lj1_OlDFOVM';
                 <a href="index.html">Homepage</a>
                 <ul>
                   <li class="menu-item"><a href="index.html">Slider Home</a></li>
-                  <li class="menu-item current-menu-item active"><a href="home-video-bg.php">Video Home</a></li>
+                  <li class="menu-item current-menu-item active"><a href="home-video-bg.html">Video Home</a></li>
                 </ul>
               </li>
               <li class="menu-item"><a href="#about">About us</a></li>
@@ -101,7 +98,7 @@ $youtubeUrl = 'https://youtu.be/lj1_OlDFOVM';
 	<section class="hero text-center" id="home">
 		<div class="single-slide youtube-bg">
             <!-- For Youtube Background -->
-            <div id="bgndVideo" class="player" data-property="{videoURL:'<?php echo htmlspecialchars($youtubeUrl, ENT_QUOTES, 'UTF-8'); ?>', containment:'.youtube-bg',autoPlay:true, mute:true, startAt:1, opacity:1, showControls:false, loop:true}">
+            <div id="bgndVideo" class="player" data-property="{videoURL:'https://youtu.be/lj1_OlDFOVM', containment:'.youtube-bg',autoPlay:true, mute:true, startAt:1, opacity:1, showControls:false, loop:true}">
             </div>
             <!-- End Youtube Background -->
 			<div class="container">
@@ -706,7 +703,7 @@ $youtubeUrl = 'https://youtu.be/lj1_OlDFOVM';
                     <form action="https://api.web3forms.com/submit" method="post" class="event-join-form">
                         <input type="hidden" name="access_key" value="0d3c33b9-f471-4968-8016-506544abd2a0">
                         <input type="hidden" name="subject" value="Event Interest">
-                        <input type="hidden" name="redirect" value="home-video-bg.php#contact">
+                        <input type="hidden" name="redirect" value="home-video-bg.html#contact">
                          <div class="row">
                              <div class="col-sm-6">
                                 <input type="text" name="name" placeholder="Full Name" required>
@@ -827,7 +824,7 @@ $youtubeUrl = 'https://youtu.be/lj1_OlDFOVM';
                 <div class="col-md-7">
                     <form action="https://api.web3forms.com/submit" method="post">
                         <input type="hidden" name="access_key" value="0d3c33b9-f471-4968-8016-506544abd2a0">
-                        <input type="hidden" name="redirect" value="home-video-bg.php#contact">
+                        <input type="hidden" name="redirect" value="home-video-bg.html#contact">
                   <div class="row">
                     <div class="col-sm-6">
                         <input type="text" name="name" placeholder="Full Name" required>

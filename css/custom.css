@@ -557,6 +557,21 @@ a:focus {
     max-width: 90px;
 }
 
+@media (max-width: 767px) {
+    .client .section-header {
+        margin: -20px 0 25px;
+    }
+
+    .client-logo img {
+        max-width: 90px;
+    }
+
+    .client-logo a:nth-child(3) img,
+    .client-logo a:nth-child(4) img {
+        max-width: 70px;
+    }
+}
+
 .client .section-header h2:before {
     display: none;
 }
