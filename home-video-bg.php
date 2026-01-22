@@ -230,8 +230,9 @@ $youtubeUrl = 'https://youtu.be/lj1_OlDFOVM';
                 </div><!-- .col -->
                 <div class="col-lg-6">
                     <div class="video-section">
-                        <div class="about-img">
-                            <img src="img/about-img.jpg" alt="">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" width="816" height="459" src="https://www.youtube.com/embed/lj1_OlDFOVM?modestbranding=1&autohide=1&showinfo=0&controls=0" allowfullscreen>
+                            </iframe>
                         </div>
                     </div>
                 </div><!-- .col -->
