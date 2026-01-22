@@ -532,3 +532,32 @@ a:focus {
     color: var(--ALKIF-teal-dark);
 }
 
+.client .section-header {
+    justify-content: center;
+    text-align: center;
+    margin: -72px 0 35px;
+    width: 100%;
+}
+
+.client .section-header h2 {
+    padding-right: 0;
+    margin-right: 0;
+    color: var(--ALKIF-teal);
+    font-style: normal;
+    font-size: 26px;
+}
+
+.client-logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+.client-logo a:nth-child(3) img,
+.client-logo a:nth-child(4) img {
+    max-width: 90px;
+}
+
+.client .section-header h2:before {
+    display: none;
+}
+

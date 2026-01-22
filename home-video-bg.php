@@ -1,20 +1,5 @@
 <?php
-$uploadDir = __DIR__ . DIRECTORY_SEPARATOR . 'uploads';
-$latestVideo = '';
-$allowedExt = array('mp4', 'webm', 'ogg');
-if (is_dir($uploadDir)) {
-    $files = glob($uploadDir . DIRECTORY_SEPARATOR . '*');
-    $files = array_filter($files, function ($path) use ($allowedExt) {
-        $ext = strtolower(pathinfo($path, PATHINFO_EXTENSION));
-        return is_file($path) && in_array($ext, $allowedExt, true);
-    });
-    usort($files, function ($a, $b) {
-        return filemtime($b) <=> filemtime($a);
-    });
-    if (!empty($files)) {
-        $latestVideo = 'uploads/' . basename($files[0]);
-    }
-}
+$youtubeUrl = 'https://youtu.be/lj1_OlDFOVM';
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -113,18 +98,12 @@ if (is_dir($uploadDir)) {
     <!-- End Site Header -->
 
     <!-- Start Hero Section -->
-    <section class="hero text-center" id="home">
-		<div class="single-slide <?php echo $latestVideo ? 'html5-bg' : 'youtube-bg'; ?>">
-            <?php if ($latestVideo): ?>
-            <video autoplay muted loop playsinline>
-                <source src="<?php echo htmlspecialchars($latestVideo, ENT_QUOTES, 'UTF-8'); ?>" type="video/<?php echo htmlspecialchars(pathinfo($latestVideo, PATHINFO_EXTENSION), ENT_QUOTES, 'UTF-8'); ?>">
-            </video>
-            <?php else: ?>
+	<section class="hero text-center" id="home">
+		<div class="single-slide youtube-bg">
             <!-- For Youtube Background -->
-            <div id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=SKVcQnyEIT8', containment:'.youtube-bg',autoPlay:true, mute:true, startAt:1, opacity:1, showControls:false, loop:true}">
+            <div id="bgndVideo" class="player" data-property="{videoURL:'<?php echo htmlspecialchars($youtubeUrl, ENT_QUOTES, 'UTF-8'); ?>', containment:'.youtube-bg',autoPlay:true, mute:true, startAt:1, opacity:1, showControls:false, loop:true}">
             </div>
             <!-- End Youtube Background -->
-            <?php endif; ?>
 			<div class="container">
 				<h1>LOVE . <span>CARE</span> . OPPORTUNITY</h1>
 				<h3>Restoring hope for vulnerable children in Ghana</h3>
@@ -761,6 +740,9 @@ if (is_dir($uploadDir)) {
     <!-- Start Client Section -->
     <div class="client section">
     	<div class="container">
+            <div class="section-header">
+                <h2>Our Partners &amp; Sponsors</h2>
+            </div>
     		<div class="client-logo">
     			<a href=""><img src="img/client-1.png" alt=""></a>
     			<a href=""><img src="img/client-2.png" alt=""></a>
