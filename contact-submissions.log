@@ -1,0 +1,8 @@
+2026-01-19T18:48:04+01:00 CONTACT attempt ip=::1 email=abundantlovekids@gmail.com subject=Testing
+2026-01-19T18:48:08+01:00 CONTACT failed ip=::1 reason=exception
+2026-01-19T19:56:51+01:00 CONTACT attempt ip=::1 email=abundantlovekids@gmail.com subject=Testing
+2026-01-19T19:56:53+01:00 CONTACT failed ip=::1 reason=exception
+2026-01-19T20:21:51+01:00 CONTACT attempt ip=::1 email=abkbempong@gmail.com subject=Testing
+2026-01-19T20:21:54+01:00 CONTACT failed ip=::1 reason=exception
+2026-01-20T20:01:44+01:00 CONTACT attempt ip=::1 email=- subject=-
+2026-01-20T20:01:44+01:00 CONTACT rejected ip=::1 reason=missing_fields
