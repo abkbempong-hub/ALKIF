@@ -735,72 +735,6 @@ html {
     background: rgba(0, 0, 0, 0.3);
     border-color: rgba(0, 0, 0, 0.3);
 }
-.site-header .primary-nav .menu-item-has-children > ul {
-    width: 200px;
-    padding-left: 0;
-    background-color: rgba(30,30,30, .97);
-    position: absolute;
-    top: 80px;
-    display: none !important;
-    z-index: 10;
-    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-}
-.site-header .primary-nav .menu-item-has-children > ul ul {
-    top: 1px;
-    border-left: 1px solid rgba(142, 141, 141, 0.2);
-}
-.site-header.small-height .primary-nav .menu-item-has-children > ul {
-    top: 70px;
-}
-.site-header.small-height .primary-nav .menu-item-has-children > ul ul {
-    top: 1px;
-}
-.primary-nav .menu-item:hover  > ul {
-    display: block !important;
-}
-.primary-nav .menu-item-has-children > ul > li {
-    padding: 0;
-    margin: 0;
-    position: relative;
-    line-height: 16px;
-}
-.primary-nav .menu-item-has-children > ul > li a {
-    height: initial;
-    display: block;
-    padding: 11px 15px;
-    background: transparent;
-    font-size: 11px;
-    box-shadow: none;
-    margin-top: -1px;
-}
-.site-header .primary-nav .menu-item-has-children > ul > li a,
-.site-header.small-height .primary-nav .menu-item-has-children > ul > li a {
-    min-height: 30px;
-}
-.primary-nav .menu-item-has-children > ul > li:not(:first-child) a {
-    border-top: 1px solid rgba(142, 141, 141, 0.2);
-}
-.primary-nav .menu-item-has-children > ul > li:not(:last-child) a {
-    border-bottom: 1px solid rgba(142, 141, 141, 0.2);
-}
-.primary-nav .menu-item-has-children > ul > li a:hover {
-    background: rgba(0, 0, 0, 0.3);
-    border-color: rgba(0, 0, 0, 0.3);
-}
-.primary-nav .menu-item-has-children > ul > li ul {
-    position: absolute;
-    left: 100%;
-    right: 100%;
-    top: 1px;
-    display: none;
-}
-.primary-nav .menu-item-has-children > ul > li:hover ul {
-    display: block;
-}
 /*Mobile Menu Button*/
 .m-menu-btn {
     position: relative;
@@ -869,9 +803,6 @@ html {
     transform: rotate(-45deg);
     -webkit-transition-delay: 0s, 0.2s; 
     transition-delay: 0s, 0.2s;
-}
-.m-dropdown {
-    display: none;
 }
 /*End Mobile Menu Button*/
 .primary-nav .primary-nav-list {
@@ -1961,12 +1892,6 @@ html {
 }
 
 /*== Start Site Header ==*/
-@media screen and (max-width: 1400px) and (min-width: 1001px) {
-    .site-header .primary-nav .menu-item-has-children:last-child > ul {
-        right: 0px;
-    }
-}
-
 @media screen and (max-width: 1000px) {
     /*== Home page Header ==*/
     .site-header > div {
@@ -1997,55 +1922,18 @@ html {
         top: 70px;
         margin: 0;
     }
-    .m-menu ul {
+    .primary-nav-list {
         list-style: none;
     }
-    .m-menu ul .menu-item a {
+    .primary-nav-list .menu-item a {
         display: block;
         padding: 6px 15px;
         text-transform: uppercase;
         font-size: 13px;
         letter-spacing: 1px;
     }
-    .m-menu ul .menu-item ul li a {
-        font-size: 11px;
-    }
-    .m-menu ul .menu-item a:hover {
+    .primary-nav-list .menu-item a:hover {
         background-color: #2b2b2b;
-    }
-    .m-dropdown {
-        display: inline-block;
-        position: absolute;
-        top: 9px;
-        right: 16px;
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 10px;
-        line-height: 18px;
-        height: 20px;
-        width: 20px;
-        text-align: center;
-        z-index: 11;
-        cursor: pointer;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        border-radius: 50%;
-        -webkit-transition: all 0.3s ease;
-	    -moz-transition: all 0.3s ease;
-	    -ms-transition: all 0.3s ease;
-	    transition: all 0.3s ease;
-    }
-    .m-dropdown:hover {
-        color: #fff;
-        border-bottom: 1px solid #fff;
-    }
-    .m-menu ul .menu-item ul {
-        display: none;
-        padding-left: 10px;
-    }
-    .m-menu ul > .menu-item {
-        position: relative;
-    }
-    .menu-item.menu-item-has-children > a:after {
-    display: none;
     }
 }
 /*== End Site Header ==*/

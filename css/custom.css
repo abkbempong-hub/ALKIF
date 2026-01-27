@@ -37,12 +37,6 @@ a:focus {
     align-items: center;
     gap: 4px;
 }
-.site-acronym {
-    font-size: 13px;
-    letter-spacing: 1.8px;
-    text-transform: uppercase;
-    color: var(--ALKIF-teal);
-}
 .site-tagline {
     display: block;
     font-size: 11px;
@@ -91,9 +85,6 @@ a:focus {
     color: var(--ALKIF-teal);
 }
 
-.primary-nav .menu-item-has-children > ul {
-    border-top: 3px solid var(--ALKIF-teal);
-}
 
 .site-header .primary-nav-list .menu-item > a {
     color: #fff;

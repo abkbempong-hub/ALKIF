@@ -87,7 +87,7 @@
     3. Primary Menu
   --------------------------------------------------------------*/
   
-  	function primaryMenuSetup() {
+	function primaryMenuSetup() {
 
 	    $( ".primary-nav-list" ).before( "<div class='m-menu-btn'><span></span></div>" );
 
@@ -96,14 +96,18 @@
 	      $(this).siblings('.primary-nav-list').slideToggle("slow");
 	    });
 
-	    $( ".menu-item-has-children > ul" ).before( "<i class='fa fa-plus m-dropdown'></i>" );
-
-	    $('.m-dropdown').on('click', function() {
-	      $(this).siblings('ul').slideToggle("slow");
-	      $(this).toggleClass("fa-plus fa-minus")
+	    $(".primary-nav-list a").on('click', function() {
+	      if ($(window).width() > 983) {
+	        return;
+	      }
+	      var $navList = $(this).closest('.primary-nav').find('.primary-nav-list');
+	      if ($navList.is(":visible")) {
+	        $navList.slideToggle("slow");
+	        $(".m-menu-btn").removeClass("m-menu-btn-ext");
+	      }
 	    });
 
-  	}
+	}
 
 
   	function mobileMenu() {
